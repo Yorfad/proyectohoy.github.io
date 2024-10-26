@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>AUTOMATAS AFD</title>
+		<meta charset="utf-8">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="sass/sassIndex.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"> 
+		<script src="proyecto.js"  defer></script>
+		<script src="https://kit.fontawesome.com/4bb22f668e.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>	
+
+		<header class="header">
+
+			<div class="interior">
+				<a href=""><img src="logo.png"></a>
+				<nav class="navegacion">
+					<ul>
+						<button onclick="window.location.href='index.html'">INICIO</button>
+						<button onclick="window.location.href='Ejemplo1.html'">EJEMPLO 1</button>
+						<button onclick="window.location.href='Ejemplo2.html'">EJEMPLO 2</button>
+						<button onclick="window.location.href='Ejemplo3.html'">EJEMPLO 3</button>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<br></br>
+        <br></br>
+
+		<hr size="2px" color="black" />
+
+		<div class="contenedor_título_principal">
+			<h1 class="text">AUTOMATAS AFD</h1>  
+		</div>
+	
+		<hr size="2px" color="black" />
+
+		
+		<section class="section__description">
+
+			<div class="contenedor-entrada">
+				<input type="text" id="nombre" placeholder="Ingresa el nombre del estado..." value="p,q,r">
+				<button id="agregar-estado" class="boton">
+				  <span>Agregar Estado</span>
+				</button>
+			  </div>
+			  
+			  <div class="contenedor-entrada">
+				<input type="text" id="transicion" placeholder="Ingresa la transición (estadoOrigen,símbolo,estadoDestino)" value="p,a,q;p,b,r;q,a,q;q,b,r;r,a,r;r,b,r;">
+				<button id="agregar-transicion" class="boton">
+				  <span>Agregar Transición</span>
+				</button>
+			  </div>
+			  
+			  <div class="contenedor-entrada">
+				<input type="text" id="simbolos" placeholder="Ingrese símbolos (e.g., a,b,b,a)" value ="a,a,a,b,b,a,a">
+				<button id="simular-dfa" class="boton">
+				  <span>Simular AFD</span>
+				</button>
+			  </div>
+			  
+			  <div class="contenedor-entrada">
+				<input type="text" id="estado-inicial" placeholder="Ingrese el estado inicial" value="p">
+				<button id="establecer-estado-inicial" class="boton">
+				  <span>Establecer Estado Inicial</span>
+				</button>
+			  </div>
+			  
+			  <div class="contenedor-entrada">
+				<input type="text" id="estado-final" placeholder="Ingrese estados finales (separados por comas)" value="q">
+				<button id="establecer-estado-final" class="boton">
+				  <span>Establecer Estados Finales</span>
+				</button>
+			  </div>
+
+			  <br></br>
+			  
+
+			  <div class="contenedor-entrada">
+				<center>
+				<button id="pausar-simulacion" class="boton">
+				  <span>Pausar</span>
+				</button>
+				<button id="continuar-simulacion" class="boton">
+				  <span>Continuar</span>
+				</button>
+				<button id="retroceder-simulacion" class="boton">
+				  <span>Retroceder</span>
+				</button>
+			    </center>
+			  </div>
+
+			  <br></br>
+			  
+			  <div class="contenedor-entrada">
+				<input type="file" id="archivo-dfa" accept=".txt" />
+				<button onclick="cargarArchivo()" class="boton">
+				  <span>Cargar DFA</span>
+				</button>
+			  </div>
+
+			  <br></br>
+
+			  <div>
+				<input type="checkbox" id="modo-paso" /> Modo Paso a Paso
+			  </div>
+			  <br></br>
+
+
+
+			  
+			
+			  
+			
+			<div class="Contenedor contenedor--temas">
+
+				<div id="cy" style="width: 800px; height: 600px;">
+					
+				</div>
+
+
+
+
+			</div>
+
+		</section>
+
+
+
+
+
+
+			
+
+		<footer class="footer"> 
+
+		</footer>
+	  
+		  
+
+	</body>
+</html>
